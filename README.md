@@ -46,7 +46,6 @@ How you code is your best tool, there are a few things we will be looking out fo
 
 Send us a link to your code from a GitHub fork, Dropbox, Skydrive ... whatever.  
 Please do not send attached zip files via email.  
-If you want to branch (named with your full name) and send us a pull request that works too.
 
 **If there is any setup necessary please update this README.md file with a step by step guide.**
 
