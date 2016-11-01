@@ -1,4 +1,4 @@
-Intro
+Introduction
 ===
 
 How do you code?  
@@ -24,10 +24,12 @@ The following exercise is your opportunity to show us your front-end skills.
 	- Must be usable and look OK on IE8 and IE9. We don't expect it to be beautiful.
 	- Should work on most common mobile and tablet devices for iOS and Android.
 - It needs to be platform agnostic. If it's hooked into a particular IDE or OS or needs complicated config we aren't going to be spending time to set it up.
-- Things we use (AKA brownie points).
+- Things we use.
 	- SCSS
 	- Jquery
+	- Javascript
 	- Grunt
+	- Gulp
 	- Bower
 	- NPM
 	- Express
