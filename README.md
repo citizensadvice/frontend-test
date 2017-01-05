@@ -16,7 +16,7 @@ The following exercise is your opportunity to show us your front-end skills.
 - Build your components assuming this is a deliverable for a larger web application, so consider scalability, portability, extensibility.
 - Please take performance into consideration.
 - Please take accessibility into consideration.
-- Do not use frameworks. 
+- Try not to use frameworks.
 	- We really want to get to know you and what you can do, not what comes out of a Bootstrap box.
 	- Having said that, incorporating libraries isn't a bad thing.
 - Make sure it works cross-browser.
