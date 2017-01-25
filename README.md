@@ -16,9 +16,6 @@ The following exercise is your opportunity to show us your front-end skills.
 - Build your components assuming this is a deliverable for a larger web application, so consider scalability, portability, extensibility.
 - Please take performance into consideration.
 - Please take accessibility into consideration.
-- Try not to use frameworks.
-	- We really want to get to know you and what you can do, not what comes out of a Bootstrap box.
-	- Having said that, incorporating libraries isn't a bad thing.
 - Make sure it works cross-browser.
 	- Should work great on IE10, IE11, Edge (latest version), Chrome (latest version), Safari ( latest version) and FireFox (latest version).
 	- Must be usable and look OK on IE8 and IE9. We don't expect it to be beautiful.
