@@ -18,18 +18,18 @@ The following exercise is your opportunity to show us your front-end skills.
 - Please take accessibility into consideration.
 - Make sure it works cross-browser.
 	- Should work great on IE10, IE11, Edge (latest version), Chrome (latest version), Safari ( latest version) and FireFox (latest version).
-	- Must be usable and look OK on IE8 and IE9. We don't expect it to be beautiful.
+	- Must be usable and look OK on IE9. We don't expect it to be beautiful.
 	- Should work on most common mobile and tablet devices for iOS and Android.
 - It needs to be platform agnostic. If it's hooked into a particular IDE or OS or needs complicated config we aren't going to be spending time to set it up.
 - Things we use.
-	- SCSS
+	- SASS
+	- LESS
 	- Jquery
-	- Javascript
-	- Grunt
+	- React JS
+    - CSS Modules
 	- Gulp
 	- Bower
 	- NPM
-	- Express
 
 ## What we are looking for
 
