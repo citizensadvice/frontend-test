@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="18px" viewBox="0 0 21 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>513C0FD7-4D6C-4450-BA9F-1E3EE1721F43</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Module/Header" transform="translate(-1079.000000, -36.000000)" fill="#FFFFFF">
+            <g id="Menu-Icon">
+                <g transform="translate(1058.000000, 20.000000)">
+                    <path d="M42,16 L21,16 L21,18 L42,18 L42,16 Z M42,32 L21,32 L21,34 L42,34 L42,32 Z M42,24 L21,24 L21,26 L42,26 L42,24 Z" id="Menu-Burger-Icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

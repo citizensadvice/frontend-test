@@ -1,0 +1,26 @@
+///* ========================================================================
+//   #GLOBAL
+//   ======================================================================== */
+// The global settings file contains any project-wide variables; things that
+// need to be made available to the entire codebase.
+
+// Standardise some UI treatments.
+$global-radius: 3px !default;
+$global-transition: all 300ms ease-in-out !default;
+$global-color-border: #ddd !default;
+
+$global-color-orange: #ff6008;
+$global-color-grey-dark: #424242;
+$global-color-grey: #696969;
+$global-color-grey-light: #bfbfbf;
+$global-color-grey-lightest: #f5f5f5;
+
+$global-color-box: $global-color-grey-lightest;
+$global-color-title: $global-color-grey-dark;
+$global-color-subtitle: $global-color-grey;
+$global-color-text: $global-color-grey-light;
+
+$global-font-family: 'Open Sans', sans-serif;
+
+
+

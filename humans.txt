@@ -1,9 +1,8 @@
 /* TEAM */
-	UI developer: Your Name
-	Contact: you [at] yourdomain.org
-	Twitter: @???
-	LinkedIn: https://uk.linkedin.com/in/your-id-here
-	From: Your Country / Location
+	UI developer: Ermes Enea Colella
+	Contact: eecolella@gmail.com
+	LinkedIn: https://www.linkedin.com/in/eecolella/
+	From: UK / London
 
 /**
  * Please leave us your contact details here so we can be sure we can get back in touch.

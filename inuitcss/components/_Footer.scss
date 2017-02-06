@@ -1,0 +1,45 @@
+/*
+ *
+ *
+ *
+ *
+ * *************************** @components.footer(css)
+ * ***************************************************
+ *
+ */
+
+.c-footer {
+  margin: $inuit-global-spacing-unit-large 0;
+
+  @include media-query(tablet) {
+    margin: $inuit-global-spacing-unit 0 $inuit-global-spacing-unit-large;
+  }
+
+  &__logo {
+    height: 26px;
+  }
+  &__logo-container {
+    @include media-query(tablet) {
+      margin-bottom: $inuit-global-spacing-unit-large;
+      text-align: center;
+    }
+  }
+
+  &__ul {
+    @extend .o-list-bare;
+    @extend .u-gamma;
+
+    li {
+      line-height: 1.75;
+    }
+
+  }
+
+  &__title {
+    @extend .u-delta;
+    text-transform: uppercase;
+    color: $global-color-grey;
+    font-weight: bold;
+    padding-bottom: $inuit-global-spacing-unit-tiny;
+  }
+}

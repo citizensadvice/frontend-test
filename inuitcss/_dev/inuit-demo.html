@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>inuit-demo</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<demo-row>
+    <demo-col>
+        <h1>h1: Lorem ipsum</h1>
+        <h2>h2: Lorem ipsum</h2>
+        <h3>h3: Lorem ipsum</h3>
+        <h4>h4: Lorem ipsum</h4>
+        <h5>h5: Lorem ipsum</h5>
+        <h6>h6: Lorem ipsum</h6>
+        <p>p: Lorem ipsum</p>
+    </demo-col>
+    <demo-col>
+        <ul>
+            <li>ul li</li>
+            <li>ul li</li>
+        </ul>
+    </demo-col>
+    <demo-col>
+        <ol>
+            <li>ol li</li>
+            <li>ol li</li>
+        </ol>
+    </demo-col>
+    <demo-col>
+        <ul class="o-layout">
+            <li class="o-layout__item u-1/3">
+                layout u-1/2
+            </li>
+            <li class="o-layout__item u-2/3">
+                layout u-1/3
+            </li>
+        </ul>
+    </demo-col>
+    <demo-col>
+        <style>
+            .icon--svg {
+                fill: red;
+                height: 80px;
+                width: 80px;
+            }
+        </style>
+        <svg class="icon--svg">
+            <use xlink:href=".symbol/svg/sprite.symbol.svg#svg"></use>
+        </svg>
+    </demo-col>
+    <demo-col>
+        <div class="icon--sass icon--sass-dim"></div>
+    </demo-col>
+    <demo-col>
+        <div class="o-flag">
+            <div class="o-flag__img">
+                <img src="http://dummyimage.com/120x80/ddd/777" alt="">
+            </div>
+            <div class="o-flag__body">
+                flag
+            </div>
+        </div>
+    </demo-col>
+    <demo-col>
+        <div class="o-media">
+            <img class="o-media__img" src="http://dummyimage.com/120x80/ddd/777" alt="">
+            <div class="o-media__body">media</div>
+        </div>
+    </demo-col>
+    <demo-col>
+        <div class="o-box">
+            box
+        </div>
+    </demo-col>
+    <demo-col>
+        <div class="o-tile">
+            tile
+        </div>
+    </demo-col>
+    <demo-col>
+        <div class="o-block">
+            <img class="o-block__img" src="http://dummyimage.com/120x80/ddd/777" alt="">
+            <div class="o-block__body">
+                block
+            </div>
+        </div>
+    </demo-col>
+    <demo-col>
+        <ul class="o-list-bare">
+            <li>list-bare</li>
+            <li>list-bare</li>
+            <li>list-bare</li>
+        </ul>
+    </demo-col>
+    <demo-col>
+        <ul class="o-list-inline">
+            <li class="o-list-inline__item">list-inline</li>
+            <li class="o-list-inline__item">list-inline</li>
+            <li class="o-list-inline__item">list-inline</li>
+        </ul>
+    </demo-col>
+    <demo-col>
+        <a class="o-link" href="#">link</a>
+    </demo-col>
+    <demo-col>
+        <div class="o-box">
+            <ul class="o-layout">
+                <li class="o-layout__item u-1/5">
+                    <div class="o-shadow-1">shadow-1</div>
+                </li>
+                <li class="o-layout__item u-1/5">
+                    <div class="o-shadow-2">shadow-2</div>
+                </li>
+                <li class="o-layout__item u-1/5">
+                    <div class="o-shadow-3">shadow-3</div>
+                </li>
+                <li class="o-layout__item u-1/5">
+                    <div class="o-shadow-4">shadow-4</div>
+                </li>
+                <li class="o-layout__item u-1/5">
+                    <div class="o-shadow-5">shadow-5</div>
+                </li>
+            </ul>
+        </div>
+    </demo-col>
+    <demo-col>
+        <div class="o-pack">
+            <div class="o-pack__item">pack</div>
+            <div class="o-pack__item">pack</div>
+            <div class="o-pack__item">pack</div>
+            <div class="o-pack__item">pack</div>
+        </div>
+    </demo-col>
+    <demo-col>
+        <table class="o-table">
+            <thead>
+                <tr>
+                    <th>table-header-cel</th>
+                    <th>table-header-cel</th>
+                    <th>table-header-cel</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>table-cell</td>
+                    <td>table-cell</td>
+                    <td>table-cell</td>
+                </tr>
+                <tr>
+                    <td>table-cell</td>
+                    <td>table-cell</td>
+                    <td>table-cell</td>
+                </tr>
+                <tr>
+                    <td>table-cell</td>
+                    <td>table-cell</td>
+                    <td>table-cell</td>
+                </tr>
+            </tbody>
+        </table>
+    </demo-col>
+</demo-row>
+
+<style>
+    demo-row {
+        margin: 20px 0;
+        display: block;
+    }
+
+    demo-row:after {
+        clear: both;
+        content: " ";
+        display: block;
+    }
+
+    demo-col {
+        width: 40%;
+        display: inline-block;
+        background: #f0f0f0;
+        margin: 30px;
+        float: left;
+    }
+</style>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+/*
+ *
+ *
+ *
+ *
+ * ************************ @utitlities.show-hide(css)
+ * ***************************************************
+ *
+ */
+
+$inuit-enable-show-hide-responsive: false !default;
+
+.u-hide {
+  display: none !important;
+}
+
+.u-show {
+  display: block !important;
+}
+
+@if ($inuit-enable-show-hide-responsive == true) {
+
+  @include responsive-class('u-show', ('display' 'block !important'));
+  @include responsive-class('u-hide', ('display' 'none !important'));
+
+}
