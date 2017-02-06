@@ -1,0 +1,26 @@
+/*
+ *
+ *
+ *
+ *
+ * ****************************** @components.app(css)
+ * ***************************************************
+ *
+ */
+
+.c-app {
+  font-family: $global-font-family;
+  color: $global-color-text;
+  letter-spacing: 0.3px;
+
+  h1 {
+    letter-spacing: -1px;
+    font-weight: 300;
+    color: $global-color-title;
+  }
+  h4 {
+    letter-spacing: -0.3px;
+    font-weight: 300;
+    color: $global-color-subtitle;
+  }
+}

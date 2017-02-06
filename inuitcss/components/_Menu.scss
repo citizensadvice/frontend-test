@@ -1,0 +1,67 @@
+/*
+ *
+ *
+ *
+ *
+ * ***************************** @components.menu(css)
+ * ***************************************************
+ *
+ */
+
+.c-menu {
+  @extend .o-wrapper;
+  position: relative;
+
+  &__ul {
+    @extend .o-list-inline;
+    @extend .o-block;
+    margin-top: $inuit-global-spacing-unit-small;
+  }
+
+  &__link {
+
+    transition: all .3s;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background: $global-color-orange;
+    }
+
+    display: inline-block;
+    margin: $inuit-global-spacing-unit-tiny;
+    padding: $inuit-global-spacing-unit-tiny;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  &__burger {
+    position: absolute;
+    right: $inuit-global-spacing-unit;
+    top: 0;
+    display: inline-block;
+    padding: $inuit-global-spacing-unit-small;
+    line-height: 1;
+    background: $global-color-orange;
+    transition: all .3s;
+    cursor: pointer;
+
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+
+    @include media-query(tablet) {
+      position: fixed;
+      z-index: 1000;
+      top: $inuit-global-spacing-unit-small;
+      box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    &:hover {
+      background: darken($global-color-orange, 7.5%);
+    }
+  }
+}

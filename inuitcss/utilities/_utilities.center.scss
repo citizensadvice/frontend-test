@@ -1,0 +1,64 @@
+/*
+ *
+ *
+ *
+ *
+ * **************************** @utilities.center(css)
+ * ***************************************************
+ *
+ */
+
+/*
+ * @vertical(css)
+ * 
+ */
+
+.u-center-v {
+  text-align: center;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.u-center-v:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+.u-center-v__child {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*
+ * @horizzontal(css)
+ *
+ */
+
+.u-center-h {
+  text-align: center;
+}
+
+.u-right {
+  text-align: right;
+}
+
+.u-left {
+  text-align: left;
+}
+
+/*
+ * @vertical and horizzontal(css)
+ *
+ */
+
+.u-center {
+  @extend .u-center-v;
+  @extend .u-center-h;
+}
+
+.u-center__child {
+  @extend .u-center-v__child
+}

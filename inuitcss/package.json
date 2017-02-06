@@ -1,0 +1,60 @@
+{
+  "name": "inuitcss",
+  "version": "6.0.0-beta.4",
+  "description": "Extensible, scalable, Sass-based, OOCSS framework for large and long-lasting UI projects.",
+  "main": "example.main.scss",
+  "scripts": {
+    "test": "npm run lint && mocha test/run.js",
+    "lint": "./node_modules/.bin/stylelint \"**/*.scss\" --syntax scss",
+    "gulp": "gulp",
+    "gulp-serve": "gulp serve",
+    "gulp-watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inuitcss/inuitcss.git"
+  },
+  "keywords": [
+    "oocss",
+    "sass",
+    "bem",
+    "itcss",
+    "css"
+  ],
+  "author": "Harry Roberts <csswizardry@gmail.com>",
+  "contributors": [
+    "Anselm Hannemann",
+    "Dennis Heibült",
+    "Florian Bouvot",
+    "Nenad Jelovac"
+  ],
+  "bugs": {
+    "license": "Apache-2.0",
+    "url": "https://github.com/inuitcss/inuitcss/issues"
+  },
+  "homepage": "https://github.com/inuitcss/inuitcss#readme",
+  "dependencies": {
+    "sass-mq": "^3.2.9"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "del": "^2.2.2",
+    "glob": "^7.0.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-svg-sprite": "^1.3.6",
+    "gulp-svgo": "^1.0.3",
+    "mocha": "^3.0.2",
+    "node-sass": "^3.8.0",
+    "run-sequence": "^1.2.2",
+    "sass-true": "^2.1.3",
+    "stylelint": "^7.1.0",
+    "stylelint-scss": "^1.3.4"
+  }
+}

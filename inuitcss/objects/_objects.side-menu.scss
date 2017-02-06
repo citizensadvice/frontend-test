@@ -1,0 +1,34 @@
+/*
+ *
+ *
+ *
+ *
+ * *************************** @objects.side-menu(css)
+ * ***************************************************
+ *
+ * http://purecss.io/layouts/side-menu/
+ *
+ */
+
+$inuit-side-menu-width: 200px !default;
+$inuit-side-menu-border-color: $global-color-border !default;
+$inuit-side-menu-background: #fbfbfb !default;
+
+.o-side-menu {
+  position: relative;
+  padding-left: $inuit-side-menu-width;
+
+  &__menu {
+    width: $inuit-side-menu-width;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background: $inuit-side-menu-background;
+    border-right: 1px solid $global-color-border;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+}

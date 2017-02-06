@@ -1,0 +1,42 @@
+/*
+ *
+ *
+ *
+ *
+ * ***************************** @utilities.small(css)
+ * ***************************************************
+ *
+ */
+
+$inuit-small-multiplicator: 1 !default;
+
+$inuit-font-size-alpha: $inuit-global-font-size - (1*$inuit-small-multiplicator) !default;
+$inuit-font-size-beta: $inuit-global-font-size - (2*$inuit-small-multiplicator) !default;
+$inuit-font-size-gamma: $inuit-global-font-size - (3*$inuit-small-multiplicator) !default;
+$inuit-font-size-delta: $inuit-global-font-size - (4*$inuit-small-multiplicator) !default;
+$inuit-font-size-epsilon: $inuit-global-font-size - (5*$inuit-small-multiplicator) !default;
+$inuit-font-size-zeta: $inuit-global-font-size - (6*$inuit-small-multiplicator) !default;
+
+.u-alpha {
+  @include inuit-font-size($inuit-font-size-alpha, $important: true);
+}
+
+.u-beta {
+  @include inuit-font-size($inuit-font-size-beta, $important: true);
+}
+
+.u-gamma {
+  @include inuit-font-size($inuit-font-size-gamma, $important: true);
+}
+
+.u-delta {
+  @include inuit-font-size($inuit-font-size-delta, $important: true);
+}
+
+.u-epsilon {
+  @include inuit-font-size($inuit-font-size-epsilon, $important: true);
+}
+
+.u-h6 {
+  @include inuit-font-size($inuit-font-size-zeta, $important: true);
+}

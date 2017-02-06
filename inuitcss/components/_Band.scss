@@ -1,0 +1,18 @@
+/*
+ *
+ *
+ *
+ *
+ * ************************************** @c-band(css)
+ * ***************************************************
+ * 
+ */
+
+.c-band {
+  padding: $inuit-global-spacing-unit 0;
+
+  &--orange {
+    color: #fff;
+    background: $global-color-orange;
+  }
+}

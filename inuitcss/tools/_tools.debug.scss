@@ -1,0 +1,119 @@
+/*
+ *
+ *
+ *
+ *
+ * ------------------------------------ @tools.debug
+ * ------------------------------------------------- *\
+ *
+ * source: http://hugogiraudel.com/2013/10/21/sass-debug/
+ *
+ */
+
+@function debug($list, $pre: false, $level: 1) {
+    $tab : "    ";
+    $indent : "";
+    $break : if($pre, "\A ", "");
+
+    @if length($list) == 0 {
+        @return "( )";
+    }
+
+    @if length($list) == 1 {
+        @return if($pre,  "(" + type-of($list) + ") ", "") + $list;
+    }
+
+    @for $i from 1 to $level {
+        $indent : $indent + $tab;
+    }
+
+    $result : $break + "[" + $break;
+
+    @for $i from 1 through length($list) {
+        $item : nth($list, $i);
+        $result : $result + if($pre, $indent + $tab, " ");
+
+        @if length($item) > 1 {
+            $result : $result
+                + if($pre, "(list: " + length($item) + ") ", "")
+                + debug($item, $pre, $level + 1);
+        } @else {
+            @if $pre {
+                $result : $result + "(" + type-of($item) + ") ";
+            }
+
+            @if length($item) == 0 {
+                $result : $result + "( )";
+            } @else if type-of($item) == string {
+                $result : $result + quote($item);
+            } @else if $item == null {
+                $result : $result + "null";
+            } @else {
+                $result : $result + $item;
+            }
+        }
+
+        @if $i != length($list) {
+            $result : $result + "," + $break;
+        }
+    }
+
+    $result : $result + $break + if($pre, if($level > 1, $indent, ""), " ") + "]";
+    @return quote($result);
+}
+
+@mixin debug-before() {
+    display       : block !important;
+    margin        : 10px !important;
+    padding       : 10px !important;
+    border-radius : 4px !important;
+    background    : #efefef !important;
+    border        : 1px solid #ddd !important;
+    color         : #333 !important;
+    font          : 14px/1.5 arial, monospace !important;
+    white-space   : pre-wrap !important;
+    white-space   : pre-wrap !important;
+    z-index       : 9999999999999999 !important;
+    position      : absolute !important;
+}
+
+@mixin debug-after() {
+    content  : 'SASS DEBUG' !important;
+    font     : 700 14px/1.5 arial, monospace !important;
+    color    : #a30a00 !important;
+    z-index  : 99999999999999999 !important;
+    position : absolute !important;
+    margin   : 20px !important;
+}
+
+@mixin debug($list) {
+
+    body:before {
+        content : debug($list, true) !important;
+        @include debug-before();
+    }
+
+    body:after {
+        @include debug-after();
+    }
+}
+
+@mixin debug-on-element($list) {
+    position : relative !important;
+
+    &:before {
+        content : debug($list, true) !important;
+        @include debug-before();
+    }
+
+    &:after {
+        @include debug-after();
+    }
+}
+
+/*
+ * Here is a cute list
+ *
+ */
+//$list : (a #bada55 42, (false (yummy cupcake)), 14px, "gloubiboulga", (), null);
+//@include debug($list);

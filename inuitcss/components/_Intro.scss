@@ -1,0 +1,52 @@
+/*
+ *
+ *
+ *
+ *
+ * **************************** @components.intro(css)
+ * ***************************************************
+ *
+ */
+
+.c-intro {
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+
+  @include media-query(tablet) {
+    height: 250px;
+  }
+
+  &:before {
+    position: absolute;
+    height: 150%;
+    width: 150%;
+    top: -50%;
+    left: -50%;
+    content: '';
+    z-index: -1;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#585858+0,333333+100 */
+    background: #585858; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #585858 0%, #333333 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #585858 0%, #333333 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #585858 0%, #333333 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#585858', endColorstr='#333333', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+  }
+
+  &__logo {
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include media-query(tablet) {
+      height: 50px;
+    }
+
+    .text {
+      fill: #fff;
+    }
+  }
+}

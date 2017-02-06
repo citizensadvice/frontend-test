@@ -1,0 +1,37 @@
+/*
+ *
+ *
+ *
+ *
+ * --------------------------------- @objects.shadow
+ * ------------------------------------------------- *\
+ *
+ */
+
+@mixin shadow($depth, $reverse: false) {
+  $primary-offset: nth(1.5 3 6 10 15, $depth) * 1px;
+  $blur: nth(1 3 3 5 6, $depth) * 4px;
+  $color: rgba(black, nth(.24 .23 .23 .22 .22, $depth));
+
+  @if $depth < 1 {
+    box-shadow: none;
+  } @else if $depth > 5 {
+    @warn "$depth `#{$depth}` is too hight, is not defined.";
+  } @else {
+    @if ($reverse) {
+      box-shadow: 0 (- $primary-offset) $blur $color;
+    } @else {
+      box-shadow: 0 $primary-offset $blur $color;
+    }
+  }
+}
+
+$shadow-list: (1, 2, 3, 4, 5) !default;
+
+@each $depth in $shadow-list {
+
+  .o-shadow-#{$depth} {
+    @include shadow($depth)
+  }
+
+}

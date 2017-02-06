@@ -7,3 +7,4 @@ node_modules
 _bower_components
 bower_components
 .idea/
+.DS_Store

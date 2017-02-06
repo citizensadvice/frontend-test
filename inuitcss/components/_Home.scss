@@ -1,0 +1,33 @@
+/*
+ *
+ *
+ *
+ *
+ * ***************************** @components.home(css)
+ * ***************************************************
+ *
+ */
+
+.c-home {
+
+  &__more-info {
+    text-align: right;
+
+    @include media-query(tablet) {
+      text-align: center;
+      margin-top: $inuit-global-spacing-unit;
+    }
+  }
+
+  &__title {
+    margin: $inuit-global-spacing-unit-large $inuit-global-spacing-unit-huge;
+    text-align: center;
+
+    @include media-query(tablet) {
+      font-size: $inuit-font-size-h3;
+      margin: $inuit-global-spacing-unit-large $inuit-global-spacing-unit;
+
+    }
+  }
+
+}
